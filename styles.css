@@ -5,7 +5,7 @@
 
 #background {
     filter: grayscale(100%);
-    background-image : url(/img/wallpaper.jpg);
+    background-image : url(/Form_basic/img/wallpaper.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
