@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#background {
+    filter: grayscale(100%);
+    background-image : url(/Sesi_4/img/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    transition: filter 1s ease-in-out;
+}
+
+
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-family: "Bebas Neue", serif;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 0px 5px 2px black;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 40px;
+    text-shadow: 1px 1px 5px black, 1px 1px 10px grey;
+    animation: slide 4s forwards ease;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(-200%);
+      }
+      50% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-100%);
+      }
+
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(2px);
+    width: 20%;
+    height: auto;
+    padding: 3em;
+    padding-bottom: 2em;
+    color: white;
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px 3px #222;
+    transition: all 0.2s;
+}
+
+main#registerForm {
+    transition: none;
+    width: 30%;
+    backdrop-filter: blur(7px);
+}
+main:hover{
+    width:30%;
+    backdrop-filter: blur(7px);
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+    font-family: "lilita one";
+    font-weight: lighter;
+    padding-bottom: 1%;
+    transition: all 0.2s ;
+}
+main:hover h2 {
+    letter-spacing: 0.1em;
+}
+
+form {
+    padding-top: 5%;
+    height: auto;
+    padding-bottom: 0%;
+}
+
+input {
+    padding: 10px;
+    padding-right: 20%;
+}
+
+label {
+    padding-bottom: 3%;
+    font-family: monospace;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.material-symbols-outlined {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    color: #222;
+    padding-right: 3%;
+}
+
+button {
+    width: 100%;
+    height: 3em;
+    font-family: monospace;
+    align-items: center;
+}
+
+.register {
+    position: relative;
+    margin-top: 10%;
+    background-color: aliceblue ;
+    font-family: monospace;
+    font-size: large;
+}
+small {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+small a{
+    color: aqua;
+}
